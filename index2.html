@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+	<title>&nbsp;</title>
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="cordova/cordova.js"></script>
+	
+		</head>
+	<body>
+	
+
+<script>	
+$("#checkAll").change(function () {
+    $("input:checkbox").prop('checked', $(this).prop("checked"));
+});
+</script>
+
+
+
+
+	<script>
+	$('.tab tr').click(function() {
+      $(this).toggleClass("clicked");
+    });
+	</script>
+	
+	
+	<style>
+	tr.clicked {
+      background-color: #00ff00;
+}
+</style>	
+	
+	
+<!-- uploaded to GIT again-->	
+
+<!-- becker blue 000028-->	
+
+
+	
+	<!-- Start of first page I --
+		<div data-role="page" id="page1">
+			<!-- Header --
+			<div data-role="header" >
+				<h1><img src="images/logo png.png" alt="Becker Helicopters" height="60" width="200" ></h1></div>
+		<br /><br />
+		
+			
+		
+<!--Change the size of the text boxes-->		
+<style type="text/css"> 
+  input[type=checkbox]
+{
+ /* 5x sized Checkboxes */
+ -ms-transform: scale(2.5); /* IE */
+ -moz-transform: scale(2.5); /* FF */
+ -webkit-transform: scale(5.0); /* Safari and Chrome */
+ -o-transform: scale(2.5); /* Opera */
+float: left;
+}
+</style>
+
+<style>
+h3              { font-size: 1.2em}
+</style>
+
+
+
+
+
+
+<style type="text/css">
+thead {color:white; height:10%}
+tbody {color:BLACK; background-color: #000028 }
+tfoot {color:red;}
+th,
+table  {  background-color: #ffffff ; border-collapse: collapse}
+tr#color1 { background-color: #ffffbf }
+tr#color2 { background-color: #e1e16b }
+tr#color3 { background-color: #000028 }
+tr#color4 { background-color: #dddddd ; border-color: 999; height: 50%}
+td#color5 { background-color: #000028 }
+td#color6 { background-color: #ffc926 }
+</style>
+
+<!--   Start of first three banners -->
+<!--; border-collapse: collapse-->
+<table style="width:100%">
+<thead>
+<td id="color5" align="center" style="width:100%" style="color:black"><br /> Becker Helicopters<br /><img src="images/logo png.png" 
+ alt="Becker Helicopters" width="200" ></td>
+</thead>
+</table>
+
+<table border="1" style="width:100%">
+<thead>
+<td id="color5" align="center" style="width:100%" style="color:black"><br />206BIII ABREVIATED NORMAL CHECKLIST<br /><br /></td>
+</thead>
+</table>
+
+<table border="1" style="width:100%">
+<thead>
+<td id="color6" align="center" style="width:100%"><h3 style="color:black">PRE START</h3></td>
+</table>
+
+<!--   End of first three banners -->
+
+<!--   check / uncheck checkboxes -->
+
+<table style="width:10%">
+<thead>
+<!--<td><label><input type="checkbox" id="checkAll"/> Check/Uncheck all</label></td>-->
+</thead>
+</table>
+
+
+<!--   First line -->
+
+
+
+<table class="tab"  border="0" style="width:100%">
+	
+<tr id="color4">
+<td style="width:6%"><input type="checkbox" align="center"/></td>
+<td style= "width:8%" align="center" ><h3>1</h3></td>
+<td style="width:43%"><h3>BATTERY MASTER</h3></td>
+<td align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></td>
+</tr>
+
+<tr id="color1">
+<td style="width:6%"><input type="checkbox"/></td>
+<td style="text-align:center"><h3> 2</h3></td>
+<td><h3>ANTI-COLLISION LIGHT</h3></td>
+<td align="right"><h3>ON</h3></td>
+</tr>
+
+<tr id="color2">
+<td><input type="checkbox" /></td>
+<td style="text-align:center"><h3> 3</h3></td>
+<td><h3>POSITION LIGHTS</h3></td>
+<td align="right"><h3>ON</h3></td>
+</tr>
+
+<tr id="color4">
+<td style="width:6%"><input type="checkbox" align="center"/></td>
+<td style= "width:8%" align="center" ><h3>4</h3></td>
+<td style="width:43%"><h3>INTERNAL INSTRUMENT LIGHTS</h3></td>
+<td align="right" style="width:43%"><h3>ON, ASA REQD</h3></td>
+</tr>
+
+
+<tr id="color1">
+<td style="width:6%"><input type="checkbox"/></td>
+<td style="text-align:center"><h3> 5</h3></td>
+<td><h3>CABIN INTERIOR</h3></td>
+<td align="right"><h3>ON</h3></td>
+</tr>
+
+
+<tr id="color2">
+<td><input type="checkbox" /></td>
+<td style="text-align:center"><h3> 6</h3></td>
+<td style="width:43%"><h3>SEATBELTS</h3></td>
+<td align="right"><h3>SECURE</h3></td>
+</tr>
+
+
+<tr id="color4">
+<td style="width:6%"><input type="checkbox" align="center"/></td>
+<td style= "width:8%" align="center" ><h3>1</h3></td>
+<td style="width:43%"><h3>BATTERY MASTER</h3></td>
+<td align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></td>
+</tr>
+
+<tr id="color1">
+<td style="width:6%"><input type="checkbox"/></td>
+<td style="text-align:center"><h3> 2</h3></td>
+<td><h3>ANTI-COLLISION LIGHT</h3></td>
+<td align="right"><h3>ON</h3></td>
+</tr>
+
+<tr id="color2">
+<td><input type="checkbox" /></td>
+<td style="text-align:center"><h3> 3</h3></td>
+<td><h3>POSITION LIGHTS</h3></td>
+<td align="right"><h3>ON</h3></td>
+</tr>
+
+<tr id="color4">
+<td style="width:6%"><input type="checkbox" align="center"/></td>
+<td style= "width:8%" align="center" ><h3>4</h3></td>
+<td style="width:43%"><h3>INTERNAL INSTRUMENT LIGHTS</h3></td>
+<td align="right" style="width:43%"><h3>ON, ASA REQD</h3></td>
+</tr>
+
+
+<tr id="color1">
+<td style="width:6%"><input type="checkbox"/></td>
+<td style="text-align:center"><h3> 5</h3></td>
+<td><h3>CABIN INTERIOR</h3></td>
+<td align="right"><h3>ON</h3></td>
+</tr>
+
+
+<tr id="color2">
+<td><input type="checkbox" /></td>
+<td style="text-align:center"><h3> 6</h3></td>
+<td style="width:43%"><h3>SEATBELTS</h3></td>
+<td align="right"><h3>SECURE</h3></td>
+</tr>
+
+
+<tr id="color4">
+<td style="width:6%"><input type="checkbox" align="center"/></td>
+<td style= "width:8%" align="center" ><h3>1</h3></td>
+<td style="width:43%"><h3>BATTERY MASTER</h3></td>
+<td align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></td>
+</tr>
+
+<tr id="color1">
+<td style="width:6%"><input type="checkbox"/></td>
+<td style="text-align:center"><h3> 2</h3></td>
+<td><h3>ANTI-COLLISION LIGHT</h3></td>
+<td align="right"><h3>ON</h3></td>
+</tr>
+
+<tr id="color2">
+<td><input type="checkbox" /></td>
+<td style="text-align:center"><h3> 3</h3></td>
+<td><h3>POSITION LIGHTS</h3></td>
+<td align="right"><h3>ON</h3></td>
+</tr>
+
+<tr id="color4">
+<td style="width:6%"><input type="checkbox" align="center"/></td>
+<td style= "width:8%" align="center" ><h3>4</h3></td>
+<td style="width:43%"><h3>INTERNAL INSTRUMENT LIGHTS</h3></td>
+<td align="right" style="width:43%"><h3>ON, ASA REQD</h3></td>
+</tr>
+
+
+<tr id="color1">
+<td style="width:6%"><input type="checkbox"/></td>
+<td style="text-align:center"><h3> 5</h3></td>
+<td><h3>CABIN INTERIOR</h3></td>
+<td align="right"><h3>ON</h3></td>
+</tr>
+
+
+<tr id="color2">
+<td><input type="checkbox" /></td>
+<td style="text-align:center"><h3> 6</h3></td>
+<td style="width:43%"><h3>SEATBELTS</h3></td>
+<td align="right"><h3>SECURE</h3></td>
+</tr>
+
+
+<tr id="color4">
+<td style="width:6%"><input type="checkbox" align="center"/></td>
+<td style= "width:8%" align="center" ><h3>1</h3></td>
+<td style="width:43%"><h3>BATTERY MASTER</h3></td>
+<td align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></td>
+</tr>
+
+<tr id="color1">
+<td style="width:6%"><input type="checkbox"/></td>
+<td style="text-align:center"><h3> 2</h3></td>
+<td><h3>ANTI-COLLISION LIGHT</h3></td>
+<td align="right"><h3>ON</h3></td>
+</tr>
+
+<tr id="color2">
+<td><input type="checkbox" /></td>
+<td style="text-align:center"><h3> 3</h3></td>
+<td><h3>POSITION LIGHTS</h3></td>
+<td align="right"><h3>ON</h3></td>
+</tr>
+
+<tr id="color4">
+<td style="width:6%"><input type="checkbox" align="center"/></td>
+<td style= "width:8%" align="center" ><h3>4</h3></td>
+<td style="width:43%"><h3>INTERNAL INSTRUMENT LIGHTS</h3></td>
+<td align="right" style="width:43%"><h3>ON, ASA REQD</h3></td>
+</tr>
+
+
+<tr id="color1">
+<td style="width:6%"><input type="checkbox"/></td>
+<td style="text-align:center"><h3> 5</h3></td>
+<td><h3>CABIN INTERIOR</h3></td>
+<td align="right"><h3>ON</h3></td>
+</tr>
+
+
+<tr id="color2">
+<td><input type="checkbox" /></td>
+<td style="text-align:center"><h3> 6</h3></td>
+<td style="width:43%"><h3>SEATBELTS</h3></td>
+<td align="right"><h3>SECURE</h3></td>
+</tr>
+
+
+
+
+
+</table>
+
+
+
+
+</body>
+</html>
+<script>
+	document.addEventListener("deviceready", onDeviceReady, false);
+
+	function onDeviceReady() {
+		document.addEventListener("pause", onPause, false);
+		document.addEventListener("resume", onResume, false);
+		alert("Device is Ready");
+
+	}
+
+
+//What to do when paused
+function onPause(){
+	
+	alert("paused!");
+}
+
+//What to do when resumed
+function onResume()
+{
+	
+	alert("resume");
+}
+</script>
