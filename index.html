@@ -14,10 +14,33 @@
 		</head>
 	<body>
 	
+
+<script>	
+$("#checkAll").change(function () {
+    $("input:checkbox").prop('checked', $(this).prop("checked"));
+});
+</script>
+
+
+
+
+	<script>
+	$('.tab tr').click(function() {
+      $(this).toggleClass("clicked");
+    });
+	</script>
+	
+	
+	<style>
+	tr.clicked {
+      background-color: #00ff00;
+}
+</style>	
+	
+	
 <!-- uploaded to GIT again-->	
 
-
-<div style="background-color: #000028;">
+<!-- becker blue 000028-->	
 
 
 	
@@ -37,368 +60,254 @@
  /* 5x sized Checkboxes */
  -ms-transform: scale(2.5); /* IE */
  -moz-transform: scale(2.5); /* FF */
- -webkit-transform: scale(2.5); /* Safari and Chrome */
+ -webkit-transform: scale(5.0); /* Safari and Chrome */
  -o-transform: scale(2.5); /* Opera */
 float: left;
 }
 </style>
 
+<style>
+h3              { font-size: 1.2em}
+</style>
+
+
+
+
+
 
 <style type="text/css">
-thead {color:white;}
-tbody {color:BLACK; background-color: #CCE5FF}
+thead {color:white; height:10%}
+tbody {color:BLACK; background-color: #000028 }
 tfoot {color:red;}
-table,th,td
-{border:0px;}
-{border-left: none;}
+th,
+table  {  background-color: #ffffff ; border-collapse: collapse}
+tr#color1 { background-color: #ffffbf }
+tr#color2 { background-color: #e1e16b }
+tr#color3 { background-color: #000028 }
+tr#color4 { background-color: #dddddd ; border-color: 999; height: 50%}
+td#color5 { background-color: #000028 }
+td#color6 { background-color: #ffc926 }
 </style>
 
 <!--   Start of first three banners -->
-
-<table border="1" style="width:100%">
+<!--; border-collapse: collapse-->
+<table style="width:100%">
 <thead>
-<td align="center" style="width:100%" bgcolor="#000028" style="color:black" line-height: 2;><br /><img src="images/logo png.png" alt="Becker Helicopters" height="60" width="200" ></td>
+<td id="color5" align="center" style="width:100%" style="color:black"><br /> Becker Helicopters<br /><img src="images/logo png.png" 
+ alt="Becker Helicopters" width="200" ></td>
 </thead>
 </table>
 
 <table border="1" style="width:100%">
 <thead>
-<td align="center" style="width:100%" bgcolor="#000028" style="color:black" line-height: 2;><br />206BIII ABREVIATED NORMAL CHECKLIST<br /><br /></td>
+<td id="color5" align="center" style="width:100%" style="color:black"><br />206BIII ABREVIATED NORMAL CHECKLIST<br /><br /></td>
 </thead>
 </table>
 
 <table border="1" style="width:100%">
 <thead>
-<td align="center" style="width:100%" bgcolor="#ffc926" style="color:black"><br />PRE START<br /><br /></td>
-</thead>
+<td id="color6" align="center" style="width:100%"><h3 style="color:black">PRE START</h3></td>
 </table>
 
 <!--   End of first three banners -->
 
-<table border="0" style="width:100%">
-<tr>
-<td style="width:6%" bgcolor="#000028"><input type="checkbox" /></td>
-<td style="width:4%">100</td>
-<td style="width:40%">BATTERY MASTER</td>
-<td align="right" style="width:50%">ON (SELECT BAT)</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td>2</td>
-<td style="background-color: #dddddd">ANTI-COLLISION LIGHT</td>
-<td align="right" style="background-color: #dddddd">ON</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td>3</td>
-<td>POSITION LIGHTS</td>
-<td align="right">ON</td>
-</tr>
+<!--   check / uncheck checkboxes -->
 
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td>4</td>
-<td style="background-color: #dddddd">INTERNAL INSTRUMENT LIGHTS</td>
-<td align="right" style="background-color: #dddddd">ON, AS REQD</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">5</td>
-<td style="background-color: #ffffff">CABIN INTERIOR</td>
-<td align="right" style="background-color: #ffffff">SECURE</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">6</td>
-<td style="background-color: #ffffbf">SEATBELTS</td>
-<td style="background-color: #ffffbf" align="right">SECURE</td>
-</tr>
+<table style="width:10%">
+<thead>
+<!--<td><label><input type="checkbox" id="checkAll"/> Check/Uncheck all</label></td>-->
+</thead>
+</table>
 
 
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td>4</td>
-<td style="background-color: #dddddd">INTERNAL INSTRUMENT LIGHTS</td>
-<td align="right" style="background-color: #dddddd">ON, AS REQD</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">5</td>
-<td style="background-color: #ffffff">CABIN INTERIOR</td>
-<td align="right" style="background-color: #ffffff">SECURE</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">6</td>
-<td style="background-color: #ffffbf">SEATBELTS</td>
-<td style="background-color: #ffffbf" align="right">SECURE</td>
+<!--   First line -->
+
+
+
+<table class="tab"  border="0" style="width:100%">
+	
+<tr id="color4">
+<td style="width:6%"><input type="checkbox" align="center"/></td>
+<td style= "width:8%" align="center" ><h3>1</h3></td>
+<td style="width:43%"><h3>BATTERY MASTER</h3></td>
+<td align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></td>
 </tr>
 
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td>4</td>
-<td style="background-color: #dddddd">INTERNAL INSTRUMENT LIGHTS</td>
-<td align="right" style="background-color: #dddddd">ON, AS REQD</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">5</td>
-<td style="background-color: #ffffff">CABIN INTERIOR</td>
-<td align="right" style="background-color: #ffffff">SECURE</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">6</td>
-<td style="background-color: #ffffbf">SEATBELTS</td>
-<td style="background-color: #ffffbf" align="right">SECURE</td>
+<tr id="color1">
+<td style="width:6%"><input type="checkbox"/></td>
+<td style="text-align:center"><h3> 2</h3></td>
+<td><h3>ANTI-COLLISION LIGHT</h3></td>
+<td align="right"><h3>ON</h3></td>
 </tr>
 
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td>4</td>
-<td style="background-color: #dddddd">INTERNAL INSTRUMENT LIGHTS</td>
-<td align="right" style="background-color: #dddddd">ON, AS REQD</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">5</td>
-<td style="background-color: #ffffff">CABIN INTERIOR</td>
-<td align="right" style="background-color: #ffffff">SECURE</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">6</td>
-<td style="background-color: #ffffbf">SEATBELTS</td>
-<td style="background-color: #ffffbf" align="right">SECURE</td>
+<tr id="color2">
+<td><input type="checkbox" /></td>
+<td style="text-align:center"><h3> 3</h3></td>
+<td><h3>POSITION LIGHTS</h3></td>
+<td align="right"><h3>ON</h3></td>
 </tr>
 
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td>4</td>
-<td style="background-color: #dddddd">INTERNAL INSTRUMENT LIGHTS</td>
-<td align="right" style="background-color: #dddddd">ON, AS REQD</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">5</td>
-<td style="background-color: #ffffff">CABIN INTERIOR</td>
-<td align="right" style="background-color: #ffffff">SECURE</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">6</td>
-<td style="background-color: #ffffbf">SEATBELTS</td>
-<td style="background-color: #ffffbf" align="right">SECURE</td>
+<tr id="color4">
+<td style="width:6%"><input type="checkbox" align="center"/></td>
+<td style= "width:8%" align="center" ><h3>4</h3></td>
+<td style="width:43%"><h3>INTERNAL INSTRUMENT LIGHTS</h3></td>
+<td align="right" style="width:43%"><h3>ON, ASA REQD</h3></td>
 </tr>
 
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td>4</td>
-<td style="background-color: #dddddd">INTERNAL INSTRUMENT LIGHTS</td>
-<td align="right" style="background-color: #dddddd">ON, AS REQD</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">5</td>
-<td style="background-color: #ffffff">CABIN INTERIOR</td>
-<td align="right" style="background-color: #ffffff">SECURE</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">6</td>
-<td style="background-color: #ffffbf">SEATBELTS</td>
-<td style="background-color: #ffffbf" align="right">SECURE</td>
+
+<tr id="color1">
+<td style="width:6%"><input type="checkbox"/></td>
+<td style="text-align:center"><h3> 5</h3></td>
+<td><h3>CABIN INTERIOR</h3></td>
+<td align="right"><h3>ON</h3></td>
 </tr>
 
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td>4</td>
-<td style="background-color: #dddddd">INTERNAL INSTRUMENT LIGHTS</td>
-<td align="right" style="background-color: #dddddd">ON, AS REQD</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">5</td>
-<td style="background-color: #ffffff">CABIN INTERIOR</td>
-<td align="right" style="background-color: #ffffff">SECURE</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">6</td>
-<td style="background-color: #ffffbf">SEATBELTS</td>
-<td style="background-color: #ffffbf" align="right">SECURE</td>
+
+<tr id="color2">
+<td><input type="checkbox" /></td>
+<td style="text-align:center"><h3> 6</h3></td>
+<td style="width:43%"><h3>SEATBELTS</h3></td>
+<td align="right"><h3>SECURE</h3></td>
 </tr>
 
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td>4</td>
-<td style="background-color: #dddddd">INTERNAL INSTRUMENT LIGHTS</td>
-<td align="right" style="background-color: #dddddd">ON, AS REQD</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">5</td>
-<td style="background-color: #ffffff">CABIN INTERIOR</td>
-<td align="right" style="background-color: #ffffff">SECURE</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">6</td>
-<td style="background-color: #ffffbf">SEATBELTS</td>
-<td style="background-color: #ffffbf" align="right">SECURE</td>
+
+<tr id="color4">
+<td style="width:6%"><input type="checkbox" align="center"/></td>
+<td style= "width:8%" align="center" ><h3>1</h3></td>
+<td style="width:43%"><h3>BATTERY MASTER</h3></td>
+<td align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></td>
 </tr>
 
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td>4</td>
-<td style="background-color: #dddddd">INTERNAL INSTRUMENT LIGHTS</td>
-<td align="right" style="background-color: #dddddd">ON, AS REQD</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">5</td>
-<td style="background-color: #ffffff">CABIN INTERIOR</td>
-<td align="right" style="background-color: #ffffff">SECURE</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">6</td>
-<td style="background-color: #ffffbf">SEATBELTS</td>
-<td style="background-color: #ffffbf" align="right">SECURE</td>
+<tr id="color1">
+<td style="width:6%"><input type="checkbox"/></td>
+<td style="text-align:center"><h3> 2</h3></td>
+<td><h3>ANTI-COLLISION LIGHT</h3></td>
+<td align="right"><h3>ON</h3></td>
 </tr>
 
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td>4</td>
-<td style="background-color: #dddddd">INTERNAL INSTRUMENT LIGHTS</td>
-<td align="right" style="background-color: #dddddd">ON, AS REQD</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">5</td>
-<td style="background-color: #ffffff">CABIN INTERIOR</td>
-<td align="right" style="background-color: #ffffff">SECURE</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">6</td>
-<td style="background-color: #ffffbf">SEATBELTS</td>
-<td style="background-color: #ffffbf" align="right">SECURE</td>
+<tr id="color2">
+<td><input type="checkbox" /></td>
+<td style="text-align:center"><h3> 3</h3></td>
+<td><h3>POSITION LIGHTS</h3></td>
+<td align="right"><h3>ON</h3></td>
 </tr>
 
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td>4</td>
-<td style="background-color: #dddddd">INTERNAL INSTRUMENT LIGHTS</td>
-<td align="right" style="background-color: #dddddd">ON, AS REQD</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">5</td>
-<td style="background-color: #ffffff">CABIN INTERIOR</td>
-<td align="right" style="background-color: #ffffff">SECURE</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">6</td>
-<td style="background-color: #ffffbf">SEATBELTS</td>
-<td style="background-color: #ffffbf" align="right">SECURE</td>
+<tr id="color4">
+<td style="width:6%"><input type="checkbox" align="center"/></td>
+<td style= "width:8%" align="center" ><h3>4</h3></td>
+<td style="width:43%"><h3>INTERNAL INSTRUMENT LIGHTS</h3></td>
+<td align="right" style="width:43%"><h3>ON, ASA REQD</h3></td>
 </tr>
 
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td>4</td>
-<td style="background-color: #dddddd">INTERNAL INSTRUMENT LIGHTS</td>
-<td align="right" style="background-color: #dddddd">ON, AS REQD</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">5</td>
-<td style="background-color: #ffffff">CABIN INTERIOR</td>
-<td align="right" style="background-color: #ffffff">SECURE</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">6</td>
-<td style="background-color: #ffffbf">SEATBELTS</td>
-<td style="background-color: #ffffbf" align="right">SECURE</td>
+
+<tr id="color1">
+<td style="width:6%"><input type="checkbox"/></td>
+<td style="text-align:center"><h3> 5</h3></td>
+<td><h3>CABIN INTERIOR</h3></td>
+<td align="right"><h3>ON</h3></td>
 </tr>
 
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td>4</td>
-<td style="background-color: #dddddd">INTERNAL INSTRUMENT LIGHTS</td>
-<td align="right" style="background-color: #dddddd">ON, AS REQD</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">5</td>
-<td style="background-color: #ffffff">CABIN INTERIOR</td>
-<td align="right" style="background-color: #ffffff">SECURE</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">6</td>
-<td style="background-color: #ffffbf">SEATBELTS</td>
-<td style="background-color: #ffffbf" align="right">SECURE</td>
+
+<tr id="color2">
+<td><input type="checkbox" /></td>
+<td style="text-align:center"><h3> 6</h3></td>
+<td style="width:43%"><h3>SEATBELTS</h3></td>
+<td align="right"><h3>SECURE</h3></td>
 </tr>
 
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td>4</td>
-<td style="background-color: #dddddd">INTERNAL INSTRUMENT LIGHTS</td>
-<td align="right" style="background-color: #dddddd">ON, AS REQD</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">5</td>
-<td style="background-color: #ffffff">CABIN INTERIOR</td>
-<td align="right" style="background-color: #ffffff">SECURE</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">6</td>
-<td style="background-color: #ffffbf">SEATBELTS</td>
-<td style="background-color: #ffffbf" align="right">SECURE</td>
+
+<tr id="color4">
+<td style="width:6%"><input type="checkbox" align="center"/></td>
+<td style= "width:8%" align="center" ><h3>1</h3></td>
+<td style="width:43%"><h3>BATTERY MASTER</h3></td>
+<td align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></td>
 </tr>
 
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td>4</td>
-<td style="background-color: #dddddd">INTERNAL INSTRUMENT LIGHTS</td>
-<td align="right" style="background-color: #dddddd">ON, AS REQD</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">5</td>
-<td style="background-color: #ffffff">CABIN INTERIOR</td>
-<td align="right" style="background-color: #ffffff">SECURE</td>
-</tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">6</td>
-<td style="background-color: #ffffbf">SEATBELTS</td>
-<td style="background-color: #ffffbf" align="right">SECURE</td>
+<tr id="color1">
+<td style="width:6%"><input type="checkbox"/></td>
+<td style="text-align:center"><h3> 2</h3></td>
+<td><h3>ANTI-COLLISION LIGHT</h3></td>
+<td align="right"><h3>ON</h3></td>
 </tr>
 
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td>4</td>
-<td style="background-color: #dddddd">INTERNAL INSTRUMENT LIGHTS</td>
-<td align="right" style="background-color: #dddddd">ON, AS REQD</td>
+<tr id="color2">
+<td><input type="checkbox" /></td>
+<td style="text-align:center"><h3> 3</h3></td>
+<td><h3>POSITION LIGHTS</h3></td>
+<td align="right"><h3>ON</h3></td>
 </tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">5</td>
-<td style="background-color: #ffffff">CABIN INTERIOR</td>
-<td align="right" style="background-color: #ffffff">SECURE</td>
+
+<tr id="color4">
+<td style="width:6%"><input type="checkbox" align="center"/></td>
+<td style= "width:8%" align="center" ><h3>4</h3></td>
+<td style="width:43%"><h3>INTERNAL INSTRUMENT LIGHTS</h3></td>
+<td align="right" style="width:43%"><h3>ON, ASA REQD</h3></td>
 </tr>
-<tr>
-<td style="background-color: #000028"><input type="checkbox" /></td>
-<td style="background-color: #ffffff">6</td>
-<td style="background-color: #ffffbf">SEATBELTS</td>
-<td style="background-color: #ffffbf" align="right">SECURE</td>
+
+
+<tr id="color1">
+<td style="width:6%"><input type="checkbox"/></td>
+<td style="text-align:center"><h3> 5</h3></td>
+<td><h3>CABIN INTERIOR</h3></td>
+<td align="right"><h3>ON</h3></td>
 </tr>
+
+
+<tr id="color2">
+<td><input type="checkbox" /></td>
+<td style="text-align:center"><h3> 6</h3></td>
+<td style="width:43%"><h3>SEATBELTS</h3></td>
+<td align="right"><h3>SECURE</h3></td>
+</tr>
+
+
+<tr id="color4">
+<td style="width:6%"><input type="checkbox" align="center"/></td>
+<td style= "width:8%" align="center" ><h3>1</h3></td>
+<td style="width:43%"><h3>BATTERY MASTER</h3></td>
+<td align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></td>
+</tr>
+
+<tr id="color1">
+<td style="width:6%"><input type="checkbox"/></td>
+<td style="text-align:center"><h3> 2</h3></td>
+<td><h3>ANTI-COLLISION LIGHT</h3></td>
+<td align="right"><h3>ON</h3></td>
+</tr>
+
+<tr id="color2">
+<td><input type="checkbox" /></td>
+<td style="text-align:center"><h3> 3</h3></td>
+<td><h3>POSITION LIGHTS</h3></td>
+<td align="right"><h3>ON</h3></td>
+</tr>
+
+<tr id="color4">
+<td style="width:6%"><input type="checkbox" align="center"/></td>
+<td style= "width:8%" align="center" ><h3>4</h3></td>
+<td style="width:43%"><h3>INTERNAL INSTRUMENT LIGHTS</h3></td>
+<td align="right" style="width:43%"><h3>ON, ASA REQD</h3></td>
+</tr>
+
+
+<tr id="color1">
+<td style="width:6%"><input type="checkbox"/></td>
+<td style="text-align:center"><h3> 5</h3></td>
+<td><h3>CABIN INTERIOR</h3></td>
+<td align="right"><h3>ON</h3></td>
+</tr>
+
+
+<tr id="color2">
+<td><input type="checkbox" /></td>
+<td style="text-align:center"><h3> 6</h3></td>
+<td style="width:43%"><h3>SEATBELTS</h3></td>
+<td align="right"><h3>SECURE</h3></td>
+</tr>
+
+
+
+
 
 </table>
 
