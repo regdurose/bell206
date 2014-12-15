@@ -250,13 +250,11 @@ table.gradienttable td p{
 
 <!-- TIP: Generate your own CSS Gradients using this tool: http://www.colorzilla.com/gradient-editor/ -->
 
-
-
-
-
-
-
-
+<script>
+$( '.checkboxes' ).on( 'click', 'input[type="checkbox"]', function () {
+    $( this ).next('label').toggleClass( 'highlight', this.checked );
+});
+</script>
 
 <script>	
 $("#checkAll").change(function () {
@@ -271,6 +269,22 @@ $("#checkAll").change(function () {
 }
 </style>	
 	
+
+<style>
+table.tablesorter tbody tr.odd.checked td {
+    background: #8080c0;
+    color: #fff;
+}
+table.tablesorter tbody tr.even.checked td {
+    background: #a0a0e0;
+    color: #fff;
+}
+</style>	
+	
+
+
+
+
 
 	<script>
 	$('.tab tr').click(function() {
@@ -289,9 +303,44 @@ $("#checkAll").change(function () {
 
 <!-- becker blue 000028-->	
 
+<script>
+$(function () {
+    var $table = $('table'),
+        checkboxColumn = 2;
 
+    // checkboxes updates
+    $table.find('tbody').on('change', 'input', function () {
+        var $cell = $(this).closest('td');
+        // only accept checkboxes in the third column
+        if ($cell[2].cellIndex === checkboxColumn) {
+            $cell.closest('th').toggleClass('checked', this.checked);
+            // update cache with checkbox state
+            $table.trigger('updateCell', [ $cell[2] ]);
+        }
+    });
 
+    $table.find('thead input').on('change', function(){
+        var chk = this.checked;
+        $table.find('tbody th').each(function(){
+            $(this).find('th:eq(' + checkboxColumn + ') input')
+                .prop('checked', chk)
+                .trigger('change');
+        });
+    });
+    
+    var headers = {};
+    headers[checkboxColumn] = { sorter: false };
+    
+    $table.tablesorter({
+        widgets: ['zebra'],
+        headers: headers
+    });
+});
 
+	</script>
+	
+	
+	
 	
 	<!-- Start of first page I --
 		<div data-role="page" id="page1">
@@ -311,7 +360,7 @@ $("#checkAll").change(function () {
  -moz-transform: scale(2.5); /* FF */
  -webkit-transform: scale(4.0); /* Safari and Chrome */
  -o-transform: scale(2.5); /* Opera */
-float: left;
+float: left; 
 }
 </style>
 
@@ -367,7 +416,15 @@ td#color6 { background-color: #ffc926 }
 
 <!--   check / uncheck checkboxes -->
 
+<p>Click the button to display an alert box:</p>
 
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+    alert("I am an alert box!");
+}
+</script>
 
 <!--   First line ================================================================================================================================-->
 
@@ -390,10 +447,10 @@ td#color6 { background-color: #ffc926 }
 </table>
 
 
-<table class="gradienttableheaderblue" style="width:94%; display:inline-table">
+<table class="gradienttableheaderblue tablesorter" style="width:94%; display:inline-table">
 <th style="width:41%" align="left"><h3>&nbsp;BATTERY MASTER</h3></th>
 <th align="right" style="width:46%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="right"/></th>
+<th style="width:6%"><input type="checkbox"  align="right"></th>
 </table>
 
 
