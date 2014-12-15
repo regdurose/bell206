@@ -56,7 +56,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', end
 
 <style type="text/css">
 table.gradienttableheaderlightblue th{
-font-size:13px;
+font-size:15px;
 background: #e9f1f7; /* Old browsers */
 background: -moz-linear-gradient(top,  #e9f1f7 0%, #d2e1f0 31%, #85c0fb 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e9f1f7), color-stop(31%,#d2e1f0), color-stop(100%,#85c0fb)); /* Chrome,Safari4+ */
@@ -72,9 +72,10 @@ border: 5px;
 }
 </style>
 
+
 <style type="text/css">
 table.gradienttableheaderblue th{
-font-size:13px;
+font-size:15px; 
 background: #c6e8ea; /* Old browsers */
 background: -moz-linear-gradient(top,  #c6e8ea 0%, #8bced7 31%, #0696ac 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c6e8ea), color-stop(31%,#8bced7), color-stop(100%,#0696ac)); /* Chrome,Safari4+ */
@@ -83,15 +84,32 @@ background: -o-linear-gradient(top,  #c6e8ea 0%,#8bced7 31%,#0696ac 100%); /* Op
 background: -ms-linear-gradient(top,  #c6e8ea 0%,#8bced7 31%,#0696ac 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #c6e8ea 0%,#8bced7 31%,#0696ac 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6e8ea', endColorstr='#0696ac',GradientType=0 ); /* IE6-9 */
-
-
-
 }
 </style>
 
+
+<style type="text/css">
+table.gradienttableheaderblueline th{
+font-size:13px; 
+background: #c6e8ea; /* Old browsers */
+background: -moz-linear-gradient(top,  #c6e8ea 0%, #8bced7 31%, #0696ac 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c6e8ea), color-stop(31%,#8bced7), color-stop(100%,#0696ac)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #c6e8ea 0%,#8bced7 31%,#0696ac 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #c6e8ea 0%,#8bced7 31%,#0696ac 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #c6e8ea 0%,#8bced7 31%,#0696ac 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #c6e8ea 0%,#8bced7 31%,#0696ac 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6e8ea', endColorstr='#0696ac',GradientType=0 ); /* IE6-9 */
+}
+</style>
+
+
+
+
+
+
 <style type="text/css">
 table.gradienttableheaderlightyellow th{
-font-size:13px;
+font-size:13px; 
 background: #fbf9ed; /* Old browsers */
 background: -moz-linear-gradient(top,  #fbf9ed 0%, #d0c258 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbf9ed), color-stop(100%,#d0c258)); /* Chrome,Safari4+ */
@@ -111,7 +129,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbf9ed', end
 
 <style type="text/css">
 table.gradienttableheaderdarkyellow th{
-font-size:13px;
+font-size:15px;border-collapse: collapse; border-spacing="0"; cellspacing="0"; cellpadding="0";
 background: #e7df9f; /* Old browsers */
 background: -moz-linear-gradient(top,  #e7df9f 0%, #b9a933 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e7df9f), color-stop(100%,#b9a933)); /* Chrome,Safari4+ */
@@ -339,130 +357,106 @@ td#color6 { background-color: #ffc926 }
 <!--   First line ================================================================================================================================-->
 
 
-
-
-
-
-
-<table class="gradienttableheaderblue" style="width:100%">
+<table class="gradienttableheaderblueline" style="width:100%">
 	<thead style="color:black"></thead>
 	<th style="width:100%"></th>
-</table>	
-<!--dark blue-->
-<table class="gradienttableheaderblue" style="width:100%">
-<thead style="color:black" onclick="backgroundColor = 'Green';">
-<th style= "width:8%" align="center" bordercolordark="#fffaaa" ><h3>1</h3></th>
-<th style="width:43%" align="left"><h3>BATTERY MASTER</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
+</table>
+
+
+
+<!--   1 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; " >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
 </thead>
 </table>
 
-<table class="gradienttableheaderblue" style="width:100%">
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderblue" style="width:94%; display:inline-table">
+<th style="width:41%" align="left"><h3>&nbsp;BATTERY MASTER</h3></th>
+<th align="right" style="width:46%"><h3>ON (SELECT BAT)</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
 	<thead style="color:black"></thead>
 	<th style="width:100%"></th>
 </table>
 
-<!--light blue-->
-<table class="gradienttableheaderlightblue" style="width:100%">
-<thead style="color:black">
-<th style= "width:8%" align="center" ><h3>2</h3></th>
-<th style="width:43%" align="left"><h3>ANTI-COLLISION LIGHT</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
-</thead>
-</table>
-
-<table class="gradienttableheaderlightblue" style="width:100%">
-	<thead style="color:black"></thead>
-	<th style="width:100%"></th>
-</table>
+<!--   2 ================================================================================================================================-->
 
 
-
-<!--light blue-->
-<table class="gradienttableheaderdarkyellow" style="width:100%">
-<thead style="color:black">
-<th style= "width:8%" align="center" ><h3>3</h3></th>
-<th style="width:43%" align="left"><h3>POSITION LIGHTS</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
 </thead>
 </table>
 
 
-<table class="gradienttableheaderdarkyellow" style="width:100%">
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderlightblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;ANTI-COLLISION LIGHT</h3></th>
+<th align="right" style="width:46%"><h3>ON</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
 	<thead style="color:black"></thead>
 	<th style="width:100%"></th>
 </table>
 
 
 
+<!--   3 ================================================================================================================================-->
 
-<table class="gradienttableheaderlightyellow" style="width:100%">
-<thead style="color:black">
 
-<th style= "width:8%" align="center" ><h3>4</h3></th>
-<th style="width:43%" align="left"><h3>BATTERY MASTER</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
 </thead>
 </table>
 
 
-<table class="gradienttableheaderlightyellow" style="width:100%">
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;POSITION LIGHTS</h3></th>
+<th align="right" style="width:46%"><h3>ON</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
 	<thead style="color:black"></thead>
 	<th style="width:100%"></th>
 </table>
 
+<!--   4 ================================================================================================================================-->
 
 
-
-
-<!--dark blue-->
-<table class="gradienttableheaderblue" style="width:100%">
-<thead style="color:black" onclick="backgroundColor = 'Green';">
-<th style= "width:8%" align="center" bordercolordark="#fffaaa" ><h3>1</h3></th>
-<th style="width:43%" align="left"><h3>BATTERY MASTER</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
-</thead>
-</table>
-
-<table class="gradienttableheaderblue" style="width:100%">
-	<thead style="color:black"></thead>
-	<th style="width:100%"></th>
-</table>
-
-<!--light blue-->
-<table class="gradienttableheaderlightblue" style="width:100%">
-<thead style="color:black">
-<th style= "width:8%" align="center" ><h3>2</h3></th>
-<th style="width:43%" align="left"><h3>ANTI-COLLISION LIGHT</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
-</thead>
-</table>
-
-<table class="gradienttableheaderlightblue" style="width:100%">
-	<thead style="color:black"></thead>
-	<th style="width:100%"></th>
-</table>
-
-
-
-<!--light blue-->
-<table class="gradienttableheaderdarkyellow" style="width:100%">
-<thead style="color:black">
-<th style= "width:8%" align="center" ><h3>3</h3></th>
-<th style="width:43%" align="left"><h3>POSITION LIGHTS</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
 </thead>
 </table>
 
 
-<table class="gradienttableheaderdarkyellow" style="width:100%">
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderlightblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;INTERNAL INSTRUMENT LIGHTS</h3></th>
+<th align="right" style="width:46%"><h3>ON, AS REQD</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
 	<thead style="color:black"></thead>
 	<th style="width:100%"></th>
 </table>
@@ -470,366 +464,918 @@ td#color6 { background-color: #ffc926 }
 
 
 
-<table class="gradienttableheaderlightyellow" style="width:100%">
-<thead style="color:black">
 
-<th style= "width:8%" align="center" ><h3>4</h3></th>
-<th style="width:43%" align="left"><h3>BATTERY MASTER</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
+<!--   1 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; " >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderblue" style="width:94%; display:inline-table">
+<th style="width:41%" align="left"><h3>&nbsp;BATTERY MASTER</h3></th>
+<th align="right" style="width:46%"><h3>ON (SELECT BAT)</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+<!--   2 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
 </thead>
 </table>
 
 
-<table class="gradienttableheaderlightyellow" style="width:100%">
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderlightblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;ANTI-COLLISION LIGHT</h3></th>
+<th align="right" style="width:46%"><h3>ON</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
 	<thead style="color:black"></thead>
 	<th style="width:100%"></th>
 </table>
 
 
 
-<!--dark blue-->
-<table class="gradienttableheaderblue" style="width:100%">
-<thead style="color:black" onclick="backgroundColor = 'Green';">
-<th style= "width:8%" align="center" bordercolordark="#fffaaa" ><h3>1</h3></th>
-<th style="width:43%" align="left"><h3>BATTERY MASTER</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
-</thead>
-</table>
-
-<table class="gradienttableheaderblue" style="width:100%">
-	<thead style="color:black"></thead>
-	<th style="width:100%"></th>
-</table>
-
-<!--light blue-->
-<table class="gradienttableheaderlightblue" style="width:100%">
-<thead style="color:black">
-<th style= "width:8%" align="center" ><h3>2</h3></th>
-<th style="width:43%" align="left"><h3>ANTI-COLLISION LIGHT</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
-</thead>
-</table>
-
-<table class="gradienttableheaderlightblue" style="width:100%">
-	<thead style="color:black"></thead>
-	<th style="width:100%"></th>
-</table>
+<!--   3 ================================================================================================================================-->
 
 
-
-<!--light blue-->
-<table class="gradienttableheaderdarkyellow" style="width:100%">
-<thead style="color:black">
-<th style= "width:8%" align="center" ><h3>3</h3></th>
-<th style="width:43%" align="left"><h3>POSITION LIGHTS</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
 </thead>
 </table>
 
 
-<table class="gradienttableheaderdarkyellow" style="width:100%">
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;POSITION LIGHTS</h3></th>
+<th align="right" style="width:46%"><h3>ON</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
 	<thead style="color:black"></thead>
 	<th style="width:100%"></th>
 </table>
 
+<!--   4 ================================================================================================================================-->
 
 
-
-<table class="gradienttableheaderlightyellow" style="width:100%">
-<thead style="color:black">
-
-<th style= "width:8%" align="center" ><h3>4</h3></th>
-<th style="width:43%" align="left"><h3>BATTERY MASTER</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
 </thead>
 </table>
 
 
-<table class="gradienttableheaderlightyellow" style="width:100%">
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderlightblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;INTERNAL INSTRUMENT LIGHTS</h3></th>
+<th align="right" style="width:46%"><h3>ON, AS REQD</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
 	<thead style="color:black"></thead>
 	<th style="width:100%"></th>
 </table>
 
 
 
-<!--dark blue-->
-<table class="gradienttableheaderblue" style="width:100%">
-<thead style="color:black" onclick="backgroundColor = 'Green';">
-<th style= "width:8%" align="center" bordercolordark="#fffaaa" ><h3>1</h3></th>
-<th style="width:43%" align="left"><h3>BATTERY MASTER</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
+<!--   1 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; " >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
 </thead>
 </table>
 
-<table class="gradienttableheaderblue" style="width:100%">
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderblue" style="width:94%; display:inline-table">
+<th style="width:41%" align="left"><h3>&nbsp;BATTERY MASTER</h3></th>
+<th align="right" style="width:46%"><h3>ON (SELECT BAT)</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
 	<thead style="color:black"></thead>
 	<th style="width:100%"></th>
 </table>
 
-<!--light blue-->
-<table class="gradienttableheaderlightblue" style="width:100%">
-<thead style="color:black">
-<th style= "width:8%" align="center" ><h3>2</h3></th>
-<th style="width:43%" align="left"><h3>ANTI-COLLISION LIGHT</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
-</thead>
-</table>
-
-<table class="gradienttableheaderlightblue" style="width:100%">
-	<thead style="color:black"></thead>
-	<th style="width:100%"></th>
-</table>
+<!--   2 ================================================================================================================================-->
 
 
-
-<!--light blue-->
-<table class="gradienttableheaderdarkyellow" style="width:100%">
-<thead style="color:black">
-<th style= "width:8%" align="center" ><h3>3</h3></th>
-<th style="width:43%" align="left"><h3>POSITION LIGHTS</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
-</thead>
-</table>
-
-
-<table class="gradienttableheaderdarkyellow" style="width:100%">
-	<thead style="color:black"></thead>
-	<th style="width:100%"></th>
-</table>
-
-
-
-
-<table class="gradienttableheaderlightyellow" style="width:100%">
-<thead style="color:black">
-
-<th style= "width:8%" align="center" ><h3>4</h3></th>
-<th style="width:43%" align="left"><h3>BATTERY MASTER</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
 </thead>
 </table>
 
 
-<table class="gradienttableheaderlightyellow" style="width:100%">
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderlightblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;ANTI-COLLISION LIGHT</h3></th>
+<th align="right" style="width:46%"><h3>ON</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
 	<thead style="color:black"></thead>
 	<th style="width:100%"></th>
 </table>
 
 
 
-<!--dark blue-->
-<table class="gradienttableheaderblue" style="width:100%">
-<thead style="color:black" onclick="backgroundColor = 'Green';">
-<th style= "width:8%" align="center" bordercolordark="#fffaaa" ><h3>1</h3></th>
-<th style="width:43%" align="left"><h3>BATTERY MASTER</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
-</thead>
-</table>
-
-<table class="gradienttableheaderblue" style="width:100%">
-	<thead style="color:black"></thead>
-	<th style="width:100%"></th>
-</table>
-
-<!--light blue-->
-<table class="gradienttableheaderlightblue" style="width:100%">
-<thead style="color:black">
-<th style= "width:8%" align="center" ><h3>2</h3></th>
-<th style="width:43%" align="left"><h3>ANTI-COLLISION LIGHT</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
-</thead>
-</table>
-
-<table class="gradienttableheaderlightblue" style="width:100%">
-	<thead style="color:black"></thead>
-	<th style="width:100%"></th>
-</table>
+<!--   3 ================================================================================================================================-->
 
 
-
-<!--light blue-->
-<table class="gradienttableheaderdarkyellow" style="width:100%">
-<thead style="color:black">
-<th style= "width:8%" align="center" ><h3>3</h3></th>
-<th style="width:43%" align="left"><h3>POSITION LIGHTS</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
 </thead>
 </table>
 
 
-<table class="gradienttableheaderdarkyellow" style="width:100%">
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;POSITION LIGHTS</h3></th>
+<th align="right" style="width:46%"><h3>ON</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
 	<thead style="color:black"></thead>
 	<th style="width:100%"></th>
 </table>
 
+<!--   4 ================================================================================================================================-->
 
 
-
-<table class="gradienttableheaderlightyellow" style="width:100%">
-<thead style="color:black">
-
-<th style= "width:8%" align="center" ><h3>4</h3></th>
-<th style="width:43%" align="left"><h3>BATTERY MASTER</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
 </thead>
 </table>
 
 
-<table class="gradienttableheaderlightyellow" style="width:100%">
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderlightblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;INTERNAL INSTRUMENT LIGHTS</h3></th>
+<th align="right" style="width:46%"><h3>ON, AS REQD</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
 	<thead style="color:black"></thead>
 	<th style="width:100%"></th>
 </table>
 
 
-	
-<!--dark blue-->
-<table class="gradienttableheaderblue" style="width:100%">
-<thead style="color:black" onclick="backgroundColor = 'Green';">
-<th style= "width:8%" align="center" bordercolordark="#fffaaa" ><h3>1</h3></th>
-<th style="width:43%" align="left"><h3>BATTERY MASTER</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
+
+<!--   1 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; " >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
 </thead>
 </table>
 
-<table class="gradienttableheaderblue" style="width:100%">
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderblue" style="width:94%; display:inline-table">
+<th style="width:41%" align="left"><h3>&nbsp;BATTERY MASTER</h3></th>
+<th align="right" style="width:46%"><h3>ON (SELECT BAT)</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
 	<thead style="color:black"></thead>
 	<th style="width:100%"></th>
 </table>
 
-<!--light blue-->
-<table class="gradienttableheaderlightblue" style="width:100%">
-<thead style="color:black">
-<th style= "width:8%" align="center" ><h3>2</h3></th>
-<th style="width:43%" align="left"><h3>ANTI-COLLISION LIGHT</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
-</thead>
-</table>
-
-<table class="gradienttableheaderlightblue" style="width:100%">
-	<thead style="color:black"></thead>
-	<th style="width:100%"></th>
-</table>
+<!--   2 ================================================================================================================================-->
 
 
-
-<!--light blue-->
-<table class="gradienttableheaderdarkyellow" style="width:100%">
-<thead style="color:black">
-<th style= "width:8%" align="center" ><h3>3</h3></th>
-<th style="width:43%" align="left"><h3>POSITION LIGHTS</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
-</thead>
-</table>
-
-
-<table class="gradienttableheaderdarkyellow" style="width:100%">
-	<thead style="color:black"></thead>
-	<th style="width:100%"></th>
-</table>
-
-
-
-
-<table class="gradienttableheaderlightyellow" style="width:100%">
-<thead style="color:black">
-
-<th style= "width:8%" align="center" ><h3>4</h3></th>
-<th style="width:43%" align="left"><h3>BATTERY MASTER</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
 </thead>
 </table>
 
 
-<table class="gradienttableheaderlightyellow" style="width:100%">
-	<thead style="color:black"></thead>
-	<th style="width:100%"></th>
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderlightblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;ANTI-COLLISION LIGHT</h3></th>
+<th align="right" style="width:46%"><h3>ON</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
 </table>
 
 
-	
-<!--dark blue-->
-<table class="gradienttableheaderblue" style="width:100%">
-<thead style="color:black" onclick="backgroundColor = 'Green';">
-<th style= "width:8%" align="center" bordercolordark="#fffaaa" ><h3>1</h3></th>
-<th style="width:43%" align="left"><h3>BATTERY MASTER</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
-</thead>
-</table>
-
-<table class="gradienttableheaderblue" style="width:100%">
-	<thead style="color:black"></thead>
-	<th style="width:100%"></th>
-</table>
-
-<!--light blue-->
-<table class="gradienttableheaderlightblue" style="width:100%">
-<thead style="color:black">
-<th style= "width:8%" align="center" ><h3>2</h3></th>
-<th style="width:43%" align="left"><h3>ANTI-COLLISION LIGHT</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
-</thead>
-</table>
-
-<table class="gradienttableheaderlightblue" style="width:100%">
+<table class="gradienttableheaderblueline" style="width:100%">
 	<thead style="color:black"></thead>
 	<th style="width:100%"></th>
 </table>
 
 
 
-<!--light blue-->
-<table class="gradienttableheaderdarkyellow" style="width:100%">
-<thead style="color:black">
-<th style= "width:8%" align="center" ><h3>3</h3></th>
-<th style="width:43%" align="left"><h3>POSITION LIGHTS</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
+<!--   3 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
 </thead>
 </table>
 
 
-<table class="gradienttableheaderdarkyellow" style="width:100%">
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;POSITION LIGHTS</h3></th>
+<th align="right" style="width:46%"><h3>ON</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
 	<thead style="color:black"></thead>
 	<th style="width:100%"></th>
 </table>
 
+<!--   4 ================================================================================================================================-->
 
 
-
-<table class="gradienttableheaderlightyellow" style="width:100%">
-<thead style="color:black">
-
-<th style= "width:8%" align="center" ><h3>4</h3></th>
-<th style="width:43%" align="left"><h3>BATTERY MASTER</h3></th>
-<th align="right" style="width:43%"><h3>ON (SELECT BAT)</h3></th>
-<th style="width:6%"><input type="checkbox" align="center"/></th>
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
 </thead>
 </table>
 
 
-<table class="gradienttableheaderlightyellow" style="width:100%">
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderlightblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;INTERNAL INSTRUMENT LIGHTS</h3></th>
+<th align="right" style="width:46%"><h3>ON, AS REQD</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
 	<thead style="color:black"></thead>
 	<th style="width:100%"></th>
 </table>
+
+
+
+<!--   1 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; " >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderblue" style="width:94%; display:inline-table">
+<th style="width:41%" align="left"><h3>&nbsp;BATTERY MASTER</h3></th>
+<th align="right" style="width:46%"><h3>ON (SELECT BAT)</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+<!--   2 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderlightblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;ANTI-COLLISION LIGHT</h3></th>
+<th align="right" style="width:46%"><h3>ON</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+
+
+<!--   3 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;POSITION LIGHTS</h3></th>
+<th align="right" style="width:46%"><h3>ON</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+<!--   4 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderlightblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;INTERNAL INSTRUMENT LIGHTS</h3></th>
+<th align="right" style="width:46%"><h3>ON, AS REQD</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+
+
+<!--   1 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; " >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderblue" style="width:94%; display:inline-table">
+<th style="width:41%" align="left"><h3>&nbsp;BATTERY MASTER</h3></th>
+<th align="right" style="width:46%"><h3>ON (SELECT BAT)</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+<!--   2 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderlightblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;ANTI-COLLISION LIGHT</h3></th>
+<th align="right" style="width:46%"><h3>ON</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+
+
+<!--   3 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;POSITION LIGHTS</h3></th>
+<th align="right" style="width:46%"><h3>ON</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+<!--   4 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderlightblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;INTERNAL INSTRUMENT LIGHTS</h3></th>
+<th align="right" style="width:46%"><h3>ON, AS REQD</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+
+
+<!--   1 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; " >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderblue" style="width:94%; display:inline-table">
+<th style="width:41%" align="left"><h3>&nbsp;BATTERY MASTER</h3></th>
+<th align="right" style="width:46%"><h3>ON (SELECT BAT)</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+<!--   2 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderlightblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;ANTI-COLLISION LIGHT</h3></th>
+<th align="right" style="width:46%"><h3>ON</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+
+
+<!--   3 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;POSITION LIGHTS</h3></th>
+<th align="right" style="width:46%"><h3>ON</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+<!--   4 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderlightblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;INTERNAL INSTRUMENT LIGHTS</h3></th>
+<th align="right" style="width:46%"><h3>ON, AS REQD</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+
+
+<!--   1 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; " >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderblue" style="width:94%; display:inline-table">
+<th style="width:41%" align="left"><h3>&nbsp;BATTERY MASTER</h3></th>
+<th align="right" style="width:46%"><h3>ON (SELECT BAT)</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+<!--   2 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderlightblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;ANTI-COLLISION LIGHT</h3></th>
+<th align="right" style="width:46%"><h3>ON</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+
+
+<!--   3 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;POSITION LIGHTS</h3></th>
+<th align="right" style="width:46%"><h3>ON</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+<!--   4 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderlightblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;INTERNAL INSTRUMENT LIGHTS</h3></th>
+<th align="right" style="width:46%"><h3>ON, AS REQD</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+
+
+<!--   1 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; " >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderblue" style="width:94%; display:inline-table">
+<th style="width:41%" align="left"><h3>&nbsp;BATTERY MASTER</h3></th>
+<th align="right" style="width:46%"><h3>ON (SELECT BAT)</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+<!--   2 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderlightblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;ANTI-COLLISION LIGHT</h3></th>
+<th align="right" style="width:46%"><h3>ON</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+
+
+<!--   3 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;POSITION LIGHTS</h3></th>
+<th align="right" style="width:46%"><h3>ON</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+<!--   4 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderlightblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;INTERNAL INSTRUMENT LIGHTS</h3></th>
+<th align="right" style="width:46%"><h3>ON, AS REQD</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+
+
+<!--   1 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; " >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderblue" style="width:94%; display:inline-table">
+<th style="width:41%" align="left"><h3>&nbsp;BATTERY MASTER</h3></th>
+<th align="right" style="width:46%"><h3>ON (SELECT BAT)</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+<!--   2 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderlightblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;ANTI-COLLISION LIGHT</h3></th>
+<th align="right" style="width:46%"><h3>ON</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+
+
+<!--   3 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;POSITION LIGHTS</h3></th>
+<th align="right" style="width:46%"><h3>ON</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+<!--   4 ================================================================================================================================-->
+
+
+<!--yellow left--    Table 1-->
+<table class="gradienttableheaderdarkyellow" style="width:5%; display:inline-table; margin:0px" >
+<thead style="color:black";>
+<th style= "width:5%" align="center" ><h3>1</h3></th>
+</thead>
+</table>
+
+
+<!--dark blue--        Table 2-->
+<table class="gradienttableheaderlightblue" style="width:94%; display:inline-table; margin:0px">
+<th style="width:41%" align="left"><h3>&nbsp;INTERNAL INSTRUMENT LIGHTS</h3></th>
+<th align="right" style="width:46%"><h3>ON, AS REQD</h3></th>
+<th style="width:6%"><input type="checkbox" align="right"/></th>
+</table>
+
+
+<table class="gradienttableheaderblueline" style="width:100%">
+	<thead style="color:black"></thead>
+	<th style="width:100%"></th>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
