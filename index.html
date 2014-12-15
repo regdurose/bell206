@@ -12,10 +12,31 @@
 		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="cordova/cordova.js"></script>
 	
+	
+	
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<script>
+$(document).ready(function(){
+$( "#hello" ).dialog({ autoOpen: false });
+$( "#say_it" ).click(function() {
+$( "#hello" ).dialog( "open" );
+});
+});
+</script>
+	
+	
+	
+	
+	
 		</head>
 	<body>
 	
 
+<button id="say_it">Say "Hello!"</button>
+<div id="hello" title="Hello  World!"><p><font face="Georgia" size="4">
+Hey, world, I just said "Hello!"</font></p></div>
 <!-- table gradient style code -->
 
 <!-- For IE7 and IE8 -->
@@ -306,7 +327,7 @@ table.tablesorter tbody tr.even.checked td {
 <script>
 $(function () {
     var $table = $('table'),
-        checkboxColumn = 2;
+        checkboxColumn = 3;
 
     // checkboxes updates
     $table.find('tbody').on('change', 'input', function () {
@@ -416,15 +437,7 @@ td#color6 { background-color: #ffc926 }
 
 <!--   check / uncheck checkboxes -->
 
-<p>Click the button to display an alert box:</p>
 
-<button onclick="myFunction()">Try it</button>
-
-<script>
-function myFunction() {
-    alert("I am an alert box!");
-}
-</script>
 
 <!--   First line ================================================================================================================================-->
 
