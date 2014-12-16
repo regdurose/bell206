@@ -17,6 +17,8 @@
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
+
 <script>
 $(document).ready(function(){
 $( "#hello" ).dialog({ autoOpen: false });
@@ -26,16 +28,35 @@ $( "#hello" ).dialog( "open" );
 });
 </script>
 	
+<script>
+$(document).ready(function(){
+$( "#hello1" ).dialog({ autoOpen: false });
+$( "#say_it1" ).click(function() {
+$( "#hello1" ).dialog( "open" );
+});
+});
+</script>
+
+
+
+
+
 
 		</head>
 	<body>
 	
 
-
-
-<button id="say_it">Information</button>
+<input type="image" src="images/Info-icon-vsmall.png" name="saveForm" class="btTxt submit" id="say_it" />
 <div id="hello" title="Information"><p>We’ll start with the HTML.  most of it is pretty obvious: 
 	 We prompt the user with a paragraph of text, display a button with the ID “say_it”, and create an element with the ID “hello”.</p></div>
+
+
+
+<input type="image" src="images/Info-icon-vsmall.png" name="saveForm" class="btTxt submit" id="say_it1" />
+<div id="hello1" title="Information"><p>different  most of it is pretty obvious: 
+	 We prompt the user with a paragraph of text, display a button with the ID “say_it”, and create an element with the ID “hello”.</p></div>
+
+
 
 
 
@@ -43,8 +64,7 @@ $( "#hello" ).dialog( "open" );
 .ui-dialog .ui-dialog-content {
     
     font-family:"MS Sans Serif";
-    font-size:12px;
-    border: 0;
+    font-size:13px:
     color:#FFFFFF; 
     background: #000066;
     overflow: auto;
